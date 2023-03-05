@@ -1,0 +1,78 @@
+
+<!--
+
+	@author: Arijit Saha
+	@desc: Html file for user login page
+	@file path from root: Ex ./user_login.html/
+
+-->
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./user_login.css" />
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="login-main-div">
+        
+        <div class="nri-travel-side">
+
+            <img class="walking-svg"
+                    
+                    alt=""
+                    src="public/undraw-walking-outside-re-56xo-1.svg"
+                />
+            <div class="nri-cares-text">
+                <img class="nri-icon" alt="" src="./public/images-1@2x.png" />
+                <div class="cares-text">  cares for your travel ! </div>
+            </div>
+
+        </div>
+
+        <div class="nri-login-side">
+            
+            <form  class="login-side-div" action="">
+                <div class="login-text"> LOGIN</div>
+                <div class="login-inputs" >
+                    
+                    <div> <input type="email" placeholder="Email"></div>
+                    <div>
+                        <input type="password" placeholder="Password" id="mypassword">  
+                        <img class="hidden-eye" id="mypassword-icon" src="./public/eye-icon.svg" alt="" onclick="togglepassword()">
+                    </div>
+                    <div class="submit-div">
+
+                        <a href="" class="submit-div-google">
+
+                                <img class="google-icon" src="./public/google-icon.svg"  alt="">
+                                <div class="goggle-login-text" >Sign-in with google</div>    
+                        </a>
+                       
+
+                        <a href="" class="submit-div-login" type="submit">
+                                <div class="normal-login-text">Login</div>    
+                        </a>
+
+
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="./index.js">
+    </script>
+</body>
+</html>

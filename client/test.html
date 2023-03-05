@@ -1,0 +1,47 @@
+<div id="firstdiv">
+    <form id="employee-form">
+      <h1>Add an employee</h1>
+      <input type="text" id="fname" name="firstname" placeholder="Name">
+      <input type="email" id="email" name="email" placeholder="Email">
+      <input type="password" id="password" name="password" placeholder="Password"><br>
+      <button type="submit">+ Add Employee</button>
+    </form>
+  
+    <h1>Search/edit an employee</h1>
+    <form id="search-form">
+      <input type="text" id="search" name="search" placeholder="Enter employee email or id">
+      <button type="button" id="search-btn"><img src="./public/icons8-search.svg" alt=""> Search</button>
+    </form>
+  </div>
+  
+  <script>
+    const employeeForm = document.getElementById('employee-form');
+    employeeForm.addEventListener('submit', (event) => {
+      event.preventDefault(); // prevent the default form submission
+  
+      const formData = new FormData(employeeForm); // get the form data
+  
+      fetch('http://localhost:8080/api/v1/user/create', {
+        method: 'POST',
+        body: formData
+      })
+        .then(response => response.json())
+        .then(data => {
+          console.log(data);
+          // handle the response data
+        })
+        .catch(error => console.error(error));
+    });
+  
+    const searchForm = document.getElementById('search-form');
+    const searchBtn = document.getElementById('search-btn');
+    searchBtn.addEventListener('click', (event) => {
+      event.preventDefault(); // prevent the default form submission
+  
+      const searchInput = document.getElementById('search');
+      const searchValue = searchInput.value;
+  
+      // send the search value to the API and handle the response
+    });
+  </script>
+  

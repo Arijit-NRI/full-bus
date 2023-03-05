@@ -1,0 +1,467 @@
+<!--
+
+	@author: Arijit Saha
+	@desc: Html serving as header and footer template
+	@file path from root: Ex ./index.html/
+
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./home.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+    />
+
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="main">
+        <!-- Header -->
+        <div class="header">
+
+            <!-- <div class="header-div">
+                <div class="nri-travel">NRI Travel</div>
+
+            </div> -->
+            <div class="header-div">
+                <a href="index.html" class="nrifintech">
+                    <div> ${NRI TRAVEL}</div>
+                </a>
+            </div>
+            <div class="header-end">
+
+                        <div class="header-end-items">
+                            <img class="vector-icon" alt="" src="public/vector2.svg" />
+                            <p class="header-end-items-text"> 
+                                <a href="my_bookings.html" class="booking">  ${Booking}  </a>
+                            </p>     
+                        </div>
+
+                        <div class="header-end-items">
+                                <img class="vector-icon" alt="" src="public/vector1.svg" />
+                                <p class="header-end-items-text"> 
+                                     <a href="" class="logout"> ${Logout}  </a>  
+                                </p>
+                        </div>
+                
+            </div>
+        </div>
+
+        <!-- Body -->
+        <div class="body-part">
+            
+                    <div>
+
+                        <!--
+
+                            Write your body code within this div
+
+                            Remove the Lorem text to add your code
+                            
+                             -->
+
+                             <div class="body-part-maindiv">
+
+                                <form action="">
+                                    <div  class="from-to-searchbar">
+
+                                       
+
+                                        <div class="from"> 
+                                            
+                                            <div class="from-to-search-text">  <label for="fromtext">From</label> </div>
+                                                <div class="options"> 
+                                                    <select name="" id="" class="from-id" onchange="getfrom()">
+
+                                                        <!-- <option value=" select "> select </option> -->
+                                                        <!-- <option value="option0"></option>
+                                                        <option value="option1">Option1</option>
+                                                        <option value="option2">Option2</option>
+                                                        <option value="option3">Option3</option> -->
+                                                    </select>
+                                                    <!-- <div class="from-id">
+
+                                                    </div> -->
+                                                 </div>
+                                            
+                                        </div>
+
+                                        <div class="to"> 
+                                            
+                                            <div class="from-to-search-text">   <label for="tottext"> TO </label>  </div>
+                                                <div class="options"> 
+                                                    <select name="" id="" class="to-id" onchange="getto()">
+
+                                                        <!-- <option value=" select "> select </option> -->
+                                                        <!-- <option value="option0"></option>
+                                                        <option value="option1">Option1</option>
+                                                        <option value="option2">Option2</option>
+                                                        <option value="option3">Option3</option> -->
+                                                    </select>
+                                                </div>
+                                        </div>
+                                            <!-- <p class="from-to-search-text">To</p> </div> -->
+
+                                        <div class="searchbar"> 
+
+                                            <img class="search-icon from-to-search-text search-icon"  src="./public/search-icon.svg" alt="">
+                                            <button type="submit" class="from-to-search-text search"> Search </button>
+                                            
+
+                                        </div>
+                                        
+
+                                    </div>
+                                </form>
+
+                                    <div class="content">
+                                        
+                                        <div class="content-element">
+
+                                            <div class="content-element-main">
+
+                                                    <!-- Bus Name , Bus Number -->
+                                                    <div class="content-element-main-divs">
+                                                        <div class="bus-name-div"> 
+                                                            <div class="bus-icon"><img  src="./public/vector4.svg" alt=""> </div>
+                                                            <div class="bus-name-text">NR-01 </div> 
+                                                        </div>
+                                                        <div class="bus-no">WB-94-3235</div>
+                                                        
+                                                    </div>
+
+
+                                                    <!-- Pickup Location & Time -->
+
+
+                                                     <div class="content-element-main-divs pickup-drop">
+                                                        <div class="pickup-div"> 
+                                                            <div class="location-icon">
+                                                                <img class="location-icon-img" src="./public/placeholder-14@2x.png" alt=""> 
+                                                            </div>
+                                                            <div class="pickup-text" >Pickup </div> 
+                                                        </div>
+                                                    <div  class="pickup-location-text">NRI Fintech</div>
+                                                    <div class="pickup-time-text">9:00 AM</div>
+
+                                                    </div>
+
+                                                    <!-- Drop Location & Time -->
+
+                                                    <div class="content-element-main-divs pickup-drop"> 
+                                                        <div class="drop-div" > 
+                                                            <div class="location-icon">
+                                                                <img class="drop-icon-img" src="./public/placeholder-14@2x.png" alt=""> 
+                                                            </div>
+                                                            <div class="drop-location">Drop </div> 
+                                                        </div>
+                                                    <div class="drop-location-text">Ultodanga</div>
+                                                    <div class="drop-time-text">12:00 AM</div>
+                                                    
+                                                    </div>
+
+                                                    <!-- Seats Left -->
+                                                    
+                                                    <div class="content-element-main-divs seats-left"> 
+                                                        
+                                                            <div  class="seats-left-div"> 
+                                                                <div  class="seats-left-text"> Seats Left </div> 
+                                                            </div>
+                                                        <div  class="seats-left-number">  30 </div>
+                                                        
+                                                    </div> 
+
+                                                    <!-- See Route ,Book -->
+
+                                                    <div class="content-element-main-divs">
+                                                        
+                                                        
+                                                       <div class="see-route-div" onclick="homeonroute()"> 
+                                                            <div class="route-icon"><img  src="./public/route-icon.svg" alt=""> </div>
+                                                            <div  class="see-route-text">See Route </div> 
+                                                        </div>
+                                                        <button class="book-btn-div" onclick="onbooking()">  
+                                                            <div class="btn-search-icon-div"> 
+                                                                <img class="btn-search-icon" src="./public/white-book-icon.svg">  
+                                                            </div>   
+                                                            <div class="book-text">Book</div> 
+                                                        </button>
+                                                    </div>
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="content-element">
+
+                                            <div class="content-element-main">
+
+                                                    <!-- Bus Name , Bus Number -->
+                                                    <div class="content-element-main-divs">
+                                                        <div class="bus-name-div"> 
+                                                            <div class="bus-icon"><img  src="./public/vector4.svg" alt=""> </div>
+                                                            <div class="bus-name-text">NR-01 </div> 
+                                                        </div>
+                                                        <div class="bus-no">WB-94-3235</div>
+                                                        
+                                                    </div>
+
+
+                                                    <!-- Pickup Location & Time -->
+
+
+                                                     <div class="content-element-main-divs pickup-drop">
+                                                        <div class="pickup-div"> 
+                                                            <div class="location-icon">
+                                                                <img class="location-icon-img" src="./public/placeholder-14@2x.png" alt=""> 
+                                                            </div>
+                                                            <div class="pickup-text" >Pickup </div> 
+                                                        </div>
+                                                    <div  class="pickup-location-text">NRI Fintech</div>
+                                                    <div class="pickup-time-text">9:00 AM</div>
+
+                                                    </div>
+
+                                                    <!-- Drop Location & Time -->
+
+                                                    <div class="content-element-main-divs pickup-drop"> 
+                                                        <div class="drop-div" > 
+                                                            <div class="location-icon">
+                                                                <img class="drop-icon-img" src="./public/placeholder-14@2x.png" alt=""> 
+                                                            </div>
+                                                            <div class="drop-location">Drop </div> 
+                                                        </div>
+                                                    <div class="drop-location-text">Ultodanga</div>
+                                                    <div class="drop-time-text">12:00 AM</div>
+                                                    
+                                                    </div>
+
+                                                    <!-- Seats Left -->
+                                                    
+                                                    <div class="content-element-main-divs seats-left"> 
+                                                        
+                                                            <div  class="seats-left-div"> 
+                                                                <div  class="seats-left-text"> Seats Left </div> 
+                                                            </div>
+                                                        <div  class="seats-left-number">  30 </div>
+                                                        
+                                                    </div> 
+
+                                                    <!-- See Route ,Book -->
+
+                                                    <div class="content-element-main-divs">
+                                                        
+                                                        
+                                                       <div class="see-route-div" onclick="homeonroute()"> 
+                                                            <div class="route-icon"><img  src="./public/route-icon.svg" alt=""> </div>
+                                                            <div  class="see-route-text">See Route </div> 
+                                                        </div>
+                                                        <button class="book-btn-div" onclick="onbooking()">  
+                                                            <div class="btn-search-icon-div"> 
+                                                                <img class="btn-search-icon" src="./public/white-book-icon.svg">  
+                                                            </div>   
+                                                            <div class="book-text">Book</div> 
+                                                        </button>
+                                                    </div>
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="content-element">
+
+                                            <div class="content-element-main">
+
+                                                    <!-- Bus Name , Bus Number -->
+                                                    <div class="content-element-main-divs">
+                                                        <div class="bus-name-div"> 
+                                                            <div class="bus-icon"><img  src="./public/vector4.svg" alt=""> </div>
+                                                            <div class="bus-name-text">NR-01 </div> 
+                                                        </div>
+                                                        <div class="bus-no">WB-94-3235</div>
+                                                        
+                                                    </div>
+
+
+                                                    <!-- Pickup Location & Time -->
+
+
+                                                     <div class="content-element-main-divs pickup-drop">
+                                                        <div class="pickup-div"> 
+                                                            <div class="location-icon">
+                                                                <img class="location-icon-img" src="./public/placeholder-14@2x.png" alt=""> 
+                                                            </div>
+                                                            <div class="pickup-text" >Pickup </div> 
+                                                        </div>
+                                                    <div  class="pickup-location-text">NRI Fintech</div>
+                                                    <div class="pickup-time-text">9:00 AM</div>
+
+                                                    </div>
+
+                                                    <!-- Drop Location & Time -->
+
+                                                    <div class="content-element-main-divs pickup-drop"> 
+                                                        <div class="drop-div" > 
+                                                            <div class="location-icon">
+                                                                <img class="drop-icon-img" src="./public/placeholder-14@2x.png" alt=""> 
+                                                            </div>
+                                                            <div class="drop-location">Drop </div> 
+                                                        </div>
+                                                    <div class="drop-location-text">Ultodanga</div>
+                                                    <div class="drop-time-text">12:00 AM</div>
+                                                    
+                                                    </div>
+
+                                                    <!-- Seats Left -->
+                                                    
+                                                    <div class="content-element-main-divs seats-left"> 
+                                                        
+                                                            <div  class="seats-left-div"> 
+                                                                <div  class="seats-left-text"> Seats Left </div> 
+                                                            </div>
+                                                        <div  class="seats-left-number">  30 </div>
+                                                        
+                                                    </div> 
+
+                                                    <!-- See Route ,Book -->
+
+                                                    <div class="content-element-main-divs">
+                                                        
+                                                        
+                                                       <div class="see-route-div" onclick="homeonroute()"> 
+                                                            <div class="route-icon"><img  src="./public/route-icon.svg" alt=""> </div>
+                                                            <div  class="see-route-text">See Route </div> 
+                                                        </div>
+                                                        <button class="book-btn-div" onclick="onbooking()">  
+                                                            <div class="btn-search-icon-div"> 
+                                                                <img class="btn-search-icon" src="./public/white-book-icon.svg">  
+                                                            </div>   
+                                                            <div class="book-text">Book</div> 
+                                                        </button>
+                                                    </div>
+                                            </div>
+                                        </div>
+
+
+                                        <!-- 
+                                        <div class="content-element"></div>
+                                        <div class="content-element"></div>
+                                        <div class="content-element"></div>
+                                        <div class="content-element"></div>
+                                        <div class="content-element"></div>
+                                        <div class="content-element"></div>
+                                        <div class="content-element"></div>
+                                        <div class="content-element"></div> 
+                                        -->
+
+                                    </div>  <!--Content Div Ends Here-->
+
+                                
+                             </div>
+
+
+                    </div>
+            
+           
+                        
+            </div>
+
+        <!-- Footer -->
+        <div class="footer">
+
+            <div class="footer-element">
+                NRI includes a copyright notice that reserves all rights for itself,
+                and has protected material
+            </div>
+            <div class="footer-element-smallerscreen" >
+                All rights reserved by NRI
+            </div>
+        </div>
+    
+    </div>
+
+    
+    <!-- 
+        *****   OverLays   ****** 
+    -->
+
+    <!-- Cancel Overlay -->
+
+    <div class="booking-cancel-overlay" onclick="offbooking()">
+        <div class="cancel-div">
+            
+            <div class="cancel-overlay-main-div">
+
+                <div class="cancel-text">Are you sure you want to cancel your booking ?</div>
+                <div class="confirm-cancel-buttons">
+                    <button class="confirm-button"> <img class="confirm-cancel-icon" src="./public/confirm-icon.svg" alt=""> Confirm</button>
+                    <button class="cancel-button"> <img class="confirm-cancel-icon" src="./public/cancel-icon.svg" alt=""> Cancel</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Cancel Overlay Ends Here-->
+
+
+    <div class="home-route-overlay" onclick="homeoffroute()">
+        <div class="route-div"> 
+            <div class="route-overlay-main-div">
+
+                <!-- Cross div -->
+                <div class="route-overlay-crossdiv">
+                    <img class="route-cross-icon" src="./public/route-overlay-cancel-icon.svg" alt="">
+                </div>
+                <!-- Cross div ends here -->
+                
+                <div class="route-overlay-main-div-elements-div">
+                    <div class="route-overlay-time">8:00 am </div> 
+                    <img class="route-overlay-icon" src="./public/route-overlay-icon.svg" alt=""> 
+                    <div class="route-overlay-place">Ultodanga</div>
+                </div>
+
+                <div class="route-overlay-main-div-elements-div">
+                    <div class="route-overlay-time">8:15 am </div> 
+                    <img class="route-overlay-icon" src="./public/route-overlay-icon.svg" alt=""> 
+                    <div class="route-overlay-place">Sapoorji</div>
+                </div>
+
+                <div class="route-overlay-main-div-elements-div">
+                    <div class="route-overlay-time">8:30 am </div> 
+                    <img class="route-overlay-icon" src="./public/route-overlay-icon.svg" alt=""> 
+                    <div class="route-overlay-place">Saltlake</div>
+                </div>
+
+                <div class="route-overlay-main-div-elements-div">
+                    <div class="route-overlay-time">8:45 am </div> 
+                    <img class="route-overlay-icon" src="./public/route-overlay-icon.svg" alt=""> 
+                    <div class="route-overlay-place">Chingrighata</div>
+                </div>
+
+                <div class="route-overlay-main-div-elements-div">
+                    <div class="route-overlay-time">9:00 am </div> 
+                    <img class="route-overlay-icon" src="./public/route-overlay-icon.svg" alt=""> 
+                    <div class="route-overlay-place">Nri Fintech</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- OverLays End here -->
+
+    <script src="./index.js">
+    </script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+
+
+/* <!--
+
+	@author: Arijit Saha
+	@desc: css file for user login html(user_login.html)
+	@file path from root: Ex ./user_login.css
+
+--> */
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+::placeholder {
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    color: rgba(120, 120, 120, 1);
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid rgba(236, 236, 236, 1);
+}
+
+input::-ms-reveal {
+    display: none;
+}
+
+.login-main-div {
+    height: 100vh;
+    width: 94%;
+    /* background-color: aqua; */
+    margin: auto;
+    display: flex;
+
+}
+
+.nri-travel-side {
+    height: 100%;
+    width: 50%;
+    /* border-right: 10px;
+    border-color:  rgba(186, 187, 187, 1); */
+    /* background-color: orange; */
+
+    border-right: 0.6px solid #BABBBB;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.nri-login-side {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    /* background-color: brown; */
+}
+
+.walking-svg {
+    height: 50%;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10%;
+    margin-bottom: 67px;
+}
+
+.nri-cares-text {
+    width: 80%;
+    height: 40%;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.nri-icon {
+    width: 18%;
+    height: 32%;
+}
+
+.cares-text {
+    font-family: Montserrat;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 61px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 5%;
+
+}
+
+.login-side-div {
+    width: 80%;
+    height: 80%;
+    /* margin: auto;
+    background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+
+}
+
+.login-text {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    font-family: Montserrat;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 61px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+
+}
+
+.login-inputs {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+input {
+    height: 60px;
+    width: 463.00433349609375px;
+    margin-bottom: 70px;
+
+}
+
+.hidden-eye {
+    height: 30px;
+    width: 30px;
+}
+
+.submit-div {
+    height: 75px;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+}
+
+.submit-div-google {
+    height: 100%;
+    width: 55%;
+    /* background-color: red; */
+    /* margin-left: auto; */
+    margin-right: auto;
+    box-shadow: 0px 1px 8px 0px rgba(163, 163, 163, 0.25);
+    background: rgba(253, 252, 252, 1);
+    border-radius: 10px;
+    display: flex;
+
+}
+
+.google-icon {
+    margin: auto;
+    height: 32px;
+    width: 31px;
+    left: 861px;
+    top: 610px;
+    border-radius: 0px;
+}
+
+.goggle-login-text {
+    margin: auto;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(78, 78, 78, 1);
+}
+
+.normal-login-text {
+    margin: auto;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    background: rgba(44, 57, 75, 1);
+    color: rgba(255, 255, 255, 1);
+
+}
+
+.submit-div-login {
+    height: 100%;
+    width: 40%;
+    /* background-color: blue; */
+    margin-left: auto;
+    border-radius: 10px;
+    background: rgba(44, 57, 75, 1);
+    display: flex;
+
+}
+
+@media(max-width:680px) {
+    .hidden-eye {
+        display: none;
+    }
+}
+
+@media(max-width: 1300px) {
+    .nri-travel-side {
+        display: none;
+    }
+
+    .nri-login-side {
+        width: 100%;
+    }
+}
+
+@media(max-width: 1300px) {
+    .cares-text {
+        margin-left: 0%;
+    }
+}
